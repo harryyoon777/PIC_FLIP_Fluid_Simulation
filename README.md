@@ -3,8 +3,8 @@
 A C++/CUDA implementation of the PIC/FLIP method for fluid simulation, with both CPU and CUDA versions.
 
 ## Demo Video
-https://github.com/heechany/PIC_FLIP_Fluid_Simulation/results/output_file_cuda.mp4
-https://github.com/heechany/PIC_FLIP_Fluid_Simulation/results/output_block_cuda_500000.mp4
+![simulation result](./demo/output_file.gif)
+![simulation result](./demo/output_block_500000.gif)
 
 ## Requirements
 
