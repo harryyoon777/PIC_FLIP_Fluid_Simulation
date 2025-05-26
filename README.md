@@ -3,7 +3,8 @@
 A C++/CUDA implementation of the PIC/FLIP method for fluid simulation, with both CPU and CUDA versions.
 
 ## Demo Video
-https://github.com/heechany/PIC_FLIP_Fluid_Simulation/assets/your-video-id
+https://github.com/heechany/PIC_FLIP_Fluid_Simulation/results/output_file_cuda.mp4
+https://github.com/heechany/PIC_FLIP_Fluid_Simulation/results/output_block_cuda_500000.mp4
 
 ## Requirements
 
@@ -80,7 +81,7 @@ This project was implemented with reference to the following materials:
 
 - [Fluid Simulation for Computer Graphics by Robert Bridson](https://www.cs.ubc.ca/~rbridson/fluidsimulation/fluids_notes.pdf)
 - [Physics-Based Animation Course Notes (UMBC)](https://cal.cs.umbc.edu/Courses/PhysicsBasedAnimation/PhysicsBasedAnimationCourseNotes2019.pdf)
-- [Fluid Tutorial (unusualnights)](https://unusualnights.github.io/fluid_tutorial/#Handling_Boundary_and_Cell_Labels)  
+- [Fluid Tutorial (unusualnights)](https://unusualinsights.github.io/fluid_tutorial/)  
   → The CPU version used the code from this tutorial.
 
 ## License
