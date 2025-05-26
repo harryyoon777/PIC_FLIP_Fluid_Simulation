@@ -1,4 +1,4 @@
-echo "CpuBuild/
+CpuBuild/
 CudaBuild/
 *.o
 *.out
@@ -9,4 +9,4 @@ CudaBuild/
 .vscode/
 __pycache__/
 *.pyc
-.DS_Store" > .gitignore
+.DS_Store
