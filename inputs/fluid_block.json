@@ -1,0 +1,22 @@
+{   
+    "dt" : 0.001111112,
+    "total_time" : 2.5,
+    "density" : 1000.0,
+    "res" : [100, 60, 80],
+    "h" : 0.01,
+    "lc" : [-0.125, -0.25, -0.125],
+    "flipRatio" : 0.95,
+    "particle_settings": {
+        "source_type": "generate_block",
+        
+        "file_path": "inputs/particles.in",
+
+        "generation_block": {
+            "num_particles": 500000,
+            "min_bounds": {"x": -0.1, "y": -0.15, "z": -0.075},
+            "max_bounds": {"x": 0.1, "y": 0.25, "z": 0.625},
+            "initial_velocity": {"x": 0.0, "y": 0.0, "z": 0.0}
+        }
+    },
+    "output_fname" : "fluid.%03d.part"
+}

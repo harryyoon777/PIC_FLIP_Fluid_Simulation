@@ -1,0 +1,12 @@
+echo "CpuBuild/
+CudaBuild/
+*.o
+*.out
+*.exe
+*.so
+*.a
+*.dylib
+.vscode/
+__pycache__/
+*.pyc
+.DS_Store" > .gitignore

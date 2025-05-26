@@ -1,0 +1,46 @@
+cmake_minimum_required(VERSION 3.10)
+project(FluidSimulationCPU CXX)
+
+# C++ Settings
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# Release mode: enable optimization
+set(CMAKE_CXX_FLAGS_RELEASE "-O3 -g -Wall")
+
+# Debug mode: enable debug info, no optimization
+set(CMAKE_CXX_FLAGS_DEBUG "-g")
+
+# Enable Debug by default (optional)
+# set(CMAKE_BUILD_TYPE Debug)
+
+# Add include directories
+include_directories(
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
+
+# Source files
+set(CPU_SOURCES
+    FluidSimulator.cpp
+    SimulationParameters.cpp
+    jsoncpp.cpp
+    cpu/Particle.cpp
+    cpu/StaggeredGrid.cpp
+    cpu/PressureSolver.cpp
+)
+
+# Create executable
+add_executable(FluidSimulator_cpu ${CPU_SOURCES})
+
+# Set header file paths
+target_include_directories(FluidSimulator_cpu PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+
+# Set output directory
+set_target_properties(FluidSimulator_cpu PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
+)
+
+# Installation settings
+install(TARGETS FluidSimulator_cpu
+    RUNTIME DESTINATION bin
+) 
